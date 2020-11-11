@@ -16,7 +16,7 @@ box_kernel = np.array([[1, 1, 1], [1, 1, 1], [1, 1, 1]], np.float32) / 9.0
 kernels = [identity_kernel, sharpen_kernel, gaussian_kernel1, gaussian_kernel2, box_kernel]
 
 # read in an image, make a grayscale copy
-color_original = cv2.imread('test.jpg')
+color_original = cv2.imread('test.PNG')
 gray_original = cv2.cvtColor(color_original, cv2.COLOR_BGR2GRAY)
 
 # create the UI (window and trackbars)
